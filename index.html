@@ -4,8 +4,44 @@
        <style>
 .my-div {
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
     border: 1px solid black;
+}
+</style>
+<style>
+.my-p {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid black;
+}
+</style>
+<style>
+    .my-span {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid rgb(255, 0, 0);
+}
+</style>
+<style>
+    .my-strong {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid rgb(38, 0, 255);
+}
+</style>
+<style>
+ .my-dashblock {
+    padding: 1px;
+    margin: 0px;
+    border: 1px dashed rgb(255, 0, 0);
+}
+</style>
+<style>
+ .my-dashinline {
+    display: inline;
+    padding: 1px;
+    margin:  0.2px;
+    border: 1px dashed rgb(255, 0, 0);
 }
 </style>
     <meta charset="UTF-8">
@@ -26,7 +62,30 @@
     <p>Block elements take up the full width available and <strong>always start on a new line.</strong></p>
     <p>Examples include: &lt;div&gt;, &lt;p&gt;, &lt;header&gt;</p>
     <div class="my-div">
-    This is a Block-Level Div Element.
+    This is a block-level div element.
     </div>
+    <p class="my-p">
+This is a block-level paragraph element.
+    </p>
+    <h2>What are Inline Elements?</h2>
+    <p>Inline elements only take up as much width as neccessary and do not start on a new line.</p>
+    <p>Examples include: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;</p>
+    <p>This is a paragraph with an <span class="my-span">inline span element</span> inside.</p>
+    <p>This text contans <strong class="my-strong">inline strong text</strong> that flows in line.</p>
+    <h2>Comparison</h2>
+    <p>Block elements stack vertically, while inline elements flow horizontally in the same line.</p>
+    <br>
+    <div class="my-dashblock">block element</div>
+    <div class="my-dashblock">block element</div>
+    <div class="my-dashblock">block element</div>
+    <div class="my-dashblock">block element</div>
+    <div class="my-dashblock">block element</div>
+    <br>
+    <p class="my-dashinline">inline element</p>
+    <p class="my-dashinline">inline element</p>
+    <p class="my-dashinline">inline element</p>
+    <p class="my-dashinline">inline element</p>
+    <p class="my-dashinline">inline element</p>
+    <p>© 2025 Block vs Inline Elements Tutorial</p>
 </body>
 </html>

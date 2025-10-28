@@ -1,6 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+.my-blockdiv {
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid black;
+}
+</style>
+<style>
+.my-p {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid black;
+}
+</style>
+<style>
+.my-strong {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid rgb(0, 38, 255);
+}
+</style>
+<style>
+.my-span {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid rgb(255, 0, 0);
+}
+</style>
+<style>
+.my-span2 {
+    padding: 1px;
+    margin: 5px;
+    border: 1px solid rgb(65, 170, 97);
+}
+</style>
+<style>
+.my-block12 {
+    padding: 5px;
+    margin: 0px;
+    border: 1px solid rgb(172, 111, 190);
+}
+</style>
+<style>
+.my-items {
+    display: inline;
+    padding: 1px;
+    margin: 0px;
+    border: 1px solid rgb(255, 179, 39);
+}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block vs Inline Elements</title>
@@ -15,5 +65,45 @@
     </header>
     <h1>Examples Demonstration</h1>
     <h2>Block Elements in Action</h2>
+    <div class="my-blockdiv">This is a block div with full width</div>
+    <p class="my-p">This is a paragraph that starts on a new line.</p>
+    <h2>Inline Elements in Action</h2>
+    <p>Here is some text with <span class="my-span">an inline span</span> and <span class="my-span2"><a href="examples.html">an inline link</a></span> flowing together.</p>
+    <p>Inline elements <strong class="my-strong">do not break the line</strong> and only take as much space as needed.</p>
+    <h2>Side-by-Side Comparison</h2>
+    <div class="my-block12">Block 1</div>
+    <div class="my-block12">Block 2</div>
+    <br>
+    Inline Example:<p class="my-items">Item 1</p>
+    <p class="my-items">Item 2</p>
+    <p class="my-items">Item 3</p>
+    <h2>Practice Form</h2>
+      <form action="submission.html" method="GET">
+        <label for="name">Name:</label>
+		<input id="name" name="name" type="text" required minlength="3" maxlength="15">
+        <br>
+        <br>
+        <label for="pw">Email:</label>
+		<input id="pw" name="pw" type="text">
+        <br>
+        <br>
+        <section>
+            <label for="feedback">Feedback:</label>
+        <textarea id="extra" name="feedback" rows="3" cols="40"></textarea>
+        </section>
+        <br>
+        <br>
+        <section class="role">
+        <label for="role">Role:</label>
+        <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+        </select>
+        </section>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    <p>© 2025 Block vs Inline Elements Tutorial</p>
 </body>
 </html>
